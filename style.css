@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(120deg,#2f39c9, #67dac6);
+    color: rgba(255, 255, 255, 0.925);
+    font-family: 'Goldman', cursive;
+    min-height: 100vh;
+}
+
+header{
+    font-size: 1.5rem;
+}
+
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding:0.5rem;
+    font-size: 2rem;
+    border: none;
+    font-family: 'Goldman', cursive;
+    background: rgba(255, 255, 255, 0.925);;
+}
+
+form button{
+    color:  #67dac6 ;
+    background: rgba(255, 255, 255, 0.925);;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+form button:hover{
+    background: #67dac6;
+    color: rgba(255, 255, 255, 0.925);;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width:30%;
+    list-style:none;
+}
+
+.todo{
+    margin : 0.5rem;
+    background:rgba(255, 255, 255, 0.925);;
+    color: black;
+    font-size: 1.5rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    transition : all 0.5s ease;
+}
+
+.todo li{
+    flex:1;
+}
+
+.trash-btn, .complete-btn{
+    background: #2d51c9;
+    color: rgba(255, 255, 255, 0.925);
+    border: none;
+    padding: 15px;
+    cursor : pointer;
+    font-size: 15px;
+}
+
+.complete-btn{
+    background-color: rgb(23, 228, 101);
+}
+
+.todo-item{
+    padding : 0rem 0.5rem;
+}
+
+.fa-trash,.fa-trash{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform:translateY(8rem) rotateZ(20deg);
+    opacity:0;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    color: #2d51c9;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+    font-family: 'Goldman', cursive;
+}
+
+.select{
+    margin:1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select option{
+    font-family: 'Goldman', cursive;
+}
+
+.select::after{
+    content: "\26DB";
+    position: absolute;
+    background: #67dac6;
+    top:0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+
+}
+
+.select:hover::after{
+    background: #2449c2;
+    color: rgba(255, 255, 255, 0.925);
+}
+
+.count{
+    width:30vw;
+    background: #2449c2;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+    word-spacing: 10px;
+    align-items: center;
+    margin-top: 1rem;
+    margin:auto;
+}

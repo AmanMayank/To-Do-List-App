@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fda7803929.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <header>
+        <h1>Todo List App</h1>
+    </header>
+    <form>
+        <input type="text" class = "todo-input"/>
+        <button class="todo-button" type="submit">
+            <i class = "fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="incomplete">Incomplete</option>
+            </select>
+        </div>
+    </form>
+
+    <div class="count">Total tasks = 0 Completed = 0 Incomplete = 0 </div>
+
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div> 
+    
+    
+    
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
