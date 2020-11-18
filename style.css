@@ -42,13 +42,13 @@ form button:hover{
     color: rgba(255, 255, 255, 0.925);;
 }
 
-.todo-container{
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.todo-list{
+.list{
     min-width:30%;
     list-style:none;
 }
@@ -81,7 +81,7 @@ form button:hover{
     background-color: rgb(23, 228, 101);
 }
 
-.todo-item{
+.item{
     padding : 0rem 0.5rem;
 }
 

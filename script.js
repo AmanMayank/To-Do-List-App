@@ -1,7 +1,7 @@
 //Selectors
-const todoInput = document.querySelector('.todo-input');
-const todoButton = document.querySelector('.todo-button');
-const todoList = document.querySelector('.todo-list');
+const todoInput = document.querySelector('.input');
+const todoButton = document.querySelector('.button');
+const todoList = document.querySelector('.list');
 const filterOption = document.querySelector('.filter-todo');
 const countButton = document.querySelector('.count');
 var count = 0;
@@ -18,6 +18,10 @@ filterOption.addEventListener('click', filterTodo);
 function addTodo(event){
   //Prevent form from submitting
   event.preventDefault();
+  
+  if(todoInput.value === ""){
+    return;
+  }
   //Todo DIV
   const todoDiv = document.createElement("div");
   todoDiv.classList.add("todo");
